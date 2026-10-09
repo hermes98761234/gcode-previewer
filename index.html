@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-code Previewer: 3D printer and CNC toolpath viewer</title>
+    <meta name="description" content="Free G-code viewer for 3D printers and CNC. Open or drop large .gcode, .nc, .ngc, .tap files, see layers, speed and feature colors in 3D, play the toolpath and get print time and filament estimates. Runs in your browser." />
+    <meta name="keywords" content="gcode viewer, g-code previewer, 3d printing, cnc toolpath, gcode simulator, print time estimate, filament usage, cura, prusaslicer, orcaslicer, simplify3d, three.js" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/gcode-previewer/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="G-code" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="G-code Previewer" />
+    <meta property="og:url" content="https://hermes98761234.github.io/gcode-previewer/" />
+    <meta property="og:title" content="G-code Previewer: see your toolpath in 3D" />
+    <meta property="og:description" content="Open big G-code files for 3D printers and CNC, color by feature or speed, step through layers, simulate the tool and estimate time and filament." />
+    <meta property="og:image" content="https://hermes98761234.github.io/gcode-previewer/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A 3D toolpath of a vase colored by feature type, with the headline: see your G-code in 3D" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="G-code Previewer: see your toolpath in 3D" />
+    <meta name="twitter:description" content="Free in-browser G-code viewer for 3D printers and CNC, with simulation and time estimates." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/gcode-previewer/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "G-code Previewer",
+        "url": "https://hermes98761234.github.io/gcode-previewer/",
+        "description": "Previews G-code for 3D printers and CNC machines in 3D, with layer filtering, color modes, toolpath simulation and print time, filament and bounding box statistics.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript, WebGL and Web Workers",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This viewer needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
